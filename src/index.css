@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Rubik", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --kat-white: #ffffff;
+  --kat-navy: #03071a;
+  --kat-blue: #12226e;
+  --kat-blue-soft: rgba(18, 34, 110, 0.07);
+  --kat-blue-line: rgba(18, 34, 110, 0.14);
+  --kat-text-muted: rgba(3, 7, 26, 0.66);
+  --kat-shadow: 0.25rem 0.25rem 0 0 rgba(18, 34, 110, 0.12);
+  --kat-shadow-mobile: 0.191rem 0.191rem 0 0 rgba(18, 34, 110, 0.1);
+  --kat-blue-shadow: 0.25rem 0.25rem 0 0 rgba(3, 7, 26, 0.38);
+  --kat-blue-shadow-mobile: 0.191rem 0.191rem 0 0 rgba(3, 7, 26, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--kat-white);
+  color: var(--kat-navy);
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+  font-family: "Rubik", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.618;
+  background:
+    linear-gradient(rgba(18, 34, 110, 0.025), rgba(18, 34, 110, 0)),
+    var(--kat-white);
+  color: var(--kat-navy);
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  color: inherit;
+}
+
+input:focus,
+select:focus,
+button:focus-visible,
+a:focus-visible {
+  outline: 0.146rem solid rgba(18, 34, 110, 0.28);
+  outline-offset: 0.236rem;
+}
+
+::selection {
+  background: rgba(18, 34, 110, 0.18);
+  color: var(--kat-navy);
+}
+
+@media (max-width: 56.25em) {
+  body {
+    background: var(--kat-white);
+  }
+}
+
+@media (max-width: 37.5em) and (orientation: portrait) {
+  body {
+    font-size: 0.95rem;
+  }
+}

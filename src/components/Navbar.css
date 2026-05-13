@@ -1,0 +1,127 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.618rem;
+  padding: 1.618rem 6.854%;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 0.0625rem solid rgba(18, 34, 110, 0.12);
+  box-shadow: 0 0.25rem 0 0 rgba(18, 34, 110, 0.08);
+}
+
+.navbar-logo {
+  color: #03071a;
+  font-size: 1.382rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  letter-spacing: 0;
+  transition:
+    color 0.22s ease,
+    transform 0.22s ease;
+}
+
+.navbar-logo:hover {
+  color: #12226e;
+  transform: translateY(-0.0625rem);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 0.618rem;
+}
+
+.navbar-links a {
+  border: 0.0625rem solid transparent;
+  border-radius: 999rem;
+  padding: 0.618rem 1rem;
+  color: rgba(3, 7, 26, 0.72);
+  font-size: 0.944rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    background 0.22s ease,
+    border-color 0.22s ease,
+    color 0.22s ease;
+}
+
+.navbar-links a:hover {
+  background: rgba(18, 34, 110, 0.06);
+  border-color: rgba(18, 34, 110, 0.14);
+  color: #12226e;
+}
+
+.navbar-button {
+  border: 0.0625rem solid #12226e;
+  border-radius: 999rem;
+  padding: 0.618rem 1.618rem;
+  background: #12226e;
+  color: #ffffff;
+  font-size: 0.944rem;
+  font-weight: 700;
+  line-height: 1;
+  transition:
+    background 0.22s ease,
+    transform 0.22s ease;
+}
+
+.navbar-button:hover {
+  background: #03071a;
+  box-shadow: var(--kat-blue-shadow);
+  transform: translateY(-0.0625rem);
+}
+
+.navbar-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 56.25em) {
+  .navbar {
+    padding: 1.382rem 5%;
+    gap: 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.236rem;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.382rem;
+  }
+
+  .navbar-links a,
+  .navbar-button {
+    padding: 0.618rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 37.5em) and (orientation: portrait) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem 1rem 1.236rem;
+    box-shadow: 0 0.191rem 0 0 rgba(18, 34, 110, 0.07);
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .navbar-links a {
+    padding: 0.618rem 0.764rem;
+  }
+
+  .navbar-button {
+    width: 100%;
+    margin-top: 0.382rem;
+  }
+}

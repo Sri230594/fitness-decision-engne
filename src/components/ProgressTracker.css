@@ -1,0 +1,117 @@
+.progress-tracker {
+  padding: 1.618rem;
+  background: #ffffff;
+  border: 0.0625rem solid rgba(18, 34, 110, 0.12);
+  border-radius: 1rem;
+  box-shadow: var(--kat-shadow);
+}
+
+.progress-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.618rem;
+}
+
+.progress-header h2 {
+  margin: 0;
+  color: #03071a;
+  font-size: 1.382rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.progress-header span {
+  padding: 0.382rem 0.618rem;
+  border-radius: 999rem;
+  background: rgba(18, 34, 110, 0.07);
+  color: #12226e;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.progress-list {
+  display: grid;
+  gap: 0.618rem;
+}
+
+.progress-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  min-height: 3.236rem;
+  padding: 1rem;
+  background: rgba(18, 34, 110, 0.035);
+  border: 0.0625rem solid rgba(18, 34, 110, 0.1);
+  border-radius: 0.618rem;
+  cursor: pointer;
+  transition:
+    background 0.22s ease,
+    border-color 0.22s ease,
+    transform 0.22s ease;
+}
+
+.progress-item:hover {
+  background: rgba(18, 34, 110, 0.06);
+  border-color: rgba(18, 34, 110, 0.2);
+  transform: translateY(-0.0625rem);
+}
+
+.progress-item input {
+  width: 1.118rem;
+  height: 1.118rem;
+  accent-color: #12226e;
+  cursor: pointer;
+}
+
+.progress-item span {
+  color: rgba(3, 7, 26, 0.78);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.progress-item strong {
+  color: #12226e;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+@media (max-width: 56.25em) {
+  .progress-tracker {
+    padding: 1.382rem;
+  }
+
+  .progress-header {
+    margin-bottom: 1rem;
+  }
+
+  .progress-item {
+    padding: 0.764rem;
+  }
+}
+
+@media (max-width: 37.5em) and (orientation: portrait) {
+  .progress-tracker {
+    padding: 1rem;
+    border-radius: 0.618rem;
+    box-shadow: var(--kat-shadow-mobile);
+  }
+
+  .progress-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.382rem;
+  }
+
+  .progress-item {
+    grid-template-columns: auto 1fr;
+    gap: 0.618rem;
+  }
+
+  .progress-item strong {
+    grid-column: 2;
+  }
+}

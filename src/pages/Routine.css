@@ -1,0 +1,120 @@
+.routine-page {
+  width: min(61.25rem, 92%);
+  margin: 0 auto;
+  padding: 2.618rem 0 4.236rem;
+}
+
+.routine-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.618rem;
+}
+
+.routine-page-header h1 {
+  margin: 0;
+  color: #03071a;
+  font-size: 2.618rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.routine-page-header a,
+.routine-empty a {
+  display: inline-block;
+  border: 0.0625rem solid #12226e;
+  border-radius: 999rem;
+  padding: 0.764rem 1.618rem;
+  background: #12226e;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    background 0.22s ease,
+    transform 0.22s ease;
+}
+
+.routine-page-header a:hover,
+.routine-empty a:hover {
+  background: #03071a;
+  box-shadow: var(--kat-blue-shadow);
+  transform: translateY(-0.0625rem);
+}
+
+.routine-error {
+  margin-bottom: 1.618rem;
+  padding: 0.764rem 1rem;
+  border: 0.0625rem solid rgba(18, 34, 110, 0.18);
+  border-radius: 0.618rem;
+  background: rgba(18, 34, 110, 0.06);
+  color: #03071a;
+  line-height: 1.5;
+}
+
+.routine-empty {
+  padding: 2.618rem;
+  background: #ffffff;
+  border: 0.0625rem solid rgba(18, 34, 110, 0.14);
+  border-radius: 1rem;
+  box-shadow: var(--kat-shadow);
+}
+
+.routine-empty h2 {
+  margin: 0 0 0.618rem;
+  color: #03071a;
+  font-size: 1.618rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.routine-empty p {
+  margin: 0 0 1.618rem;
+  color: rgba(3, 7, 26, 0.66);
+  font-weight: 400;
+  line-height: 1.618;
+}
+
+@media (max-width: 56.25em) {
+  .routine-page {
+    width: 92%;
+    padding: 1.618rem 0 2.618rem;
+  }
+
+  .routine-page-header h1 {
+    font-size: 2rem;
+  }
+
+  .routine-empty {
+    padding: 1.618rem;
+  }
+}
+
+@media (max-width: 37.5em) and (orientation: portrait) {
+  .routine-page {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .routine-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .routine-page-header h1 {
+    font-size: 1.618rem;
+  }
+
+  .routine-page-header a,
+  .routine-empty a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .routine-empty {
+    padding: 1.618rem 1rem;
+    border-radius: 0.618rem;
+    box-shadow: var(--kat-shadow-mobile);
+  }
+}

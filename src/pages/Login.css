@@ -1,0 +1,128 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.618rem 1.618rem;
+  background: #ffffff;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 26.236rem;
+  display: grid;
+  gap: 1rem;
+  padding: 2.618rem;
+  background: #ffffff;
+  border: 0.0625rem solid rgba(18, 34, 110, 0.14);
+  border-radius: 1rem;
+  box-shadow: var(--kat-shadow);
+}
+
+.login-form h1 {
+  margin: 0;
+  color: #03071a;
+  font-size: 2.058rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.login-form p {
+  margin: 0 0 0.382rem;
+  color: rgba(3, 7, 26, 0.66);
+  font-weight: 400;
+  line-height: 1.618;
+}
+
+.login-form label {
+  display: grid;
+  gap: 0.382rem;
+  color: #03071a;
+  font-weight: 600;
+}
+
+.login-form input {
+  width: 100%;
+  border: 0.0625rem solid rgba(18, 34, 110, 0.22);
+  border-radius: 0.618rem;
+  padding: 0.764rem 1rem;
+  background: #ffffff;
+  color: #03071a;
+  transition:
+    background 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.login-form input:focus {
+  border-color: #12226e;
+  background: rgba(18, 34, 110, 0.035);
+}
+
+.login-form button {
+  border: 0.0625rem solid #12226e;
+  border-radius: 0.618rem;
+  padding: 0.764rem 1rem;
+  background: #12226e;
+  color: #ffffff;
+  font-weight: 700;
+  transition:
+    background 0.22s ease,
+    transform 0.22s ease;
+}
+
+.login-form button:hover:not(:disabled) {
+  background: #03071a;
+  box-shadow: var(--kat-blue-shadow);
+  transform: translateY(-0.0625rem);
+}
+
+.login-form button:disabled {
+  background: rgba(18, 34, 110, 0.44);
+  border-color: transparent;
+}
+
+.login-form span {
+  color: rgba(3, 7, 26, 0.66);
+  line-height: 1.5;
+}
+
+.login-form a {
+  color: #12226e;
+  font-weight: 700;
+}
+
+.login-error {
+  padding: 0.764rem 1rem;
+  border: 0.0625rem solid rgba(18, 34, 110, 0.18);
+  border-radius: 0.618rem;
+  background: rgba(18, 34, 110, 0.06);
+  color: #03071a;
+  line-height: 1.5;
+}
+
+@media (max-width: 56.25em) {
+  .login-page {
+    padding: 1.618rem;
+  }
+
+  .login-form {
+    padding: 1.618rem;
+  }
+}
+
+@media (max-width: 37.5em) and (orientation: portrait) {
+  .login-page {
+    align-items: flex-start;
+    padding: 4.236rem 1rem 1.618rem;
+  }
+
+  .login-form {
+    padding: 1.618rem 1rem;
+    border-radius: 0.618rem;
+    box-shadow: var(--kat-shadow-mobile);
+  }
+
+  .login-form h1 {
+    font-size: 1.618rem;
+  }
+}

@@ -1,0 +1,141 @@
+.routine-card {
+  padding: 2.618rem;
+  background: #ffffff;
+  border: 0.0625rem solid rgba(18, 34, 110, 0.12);
+  border-radius: 1rem;
+  box-shadow: var(--kat-shadow);
+}
+
+.routine-card-header h2 {
+  margin: 0 0 0.618rem;
+  color: #03071a;
+  font-size: 1.618rem;
+  font-weight: 700;
+  line-height: 1.145;
+}
+
+.routine-card-header p {
+  max-width: 48rem;
+  margin: 0;
+  color: rgba(3, 7, 26, 0.66);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.618;
+}
+
+.routine-days {
+  display: grid;
+  gap: 1.618rem;
+  margin-top: 2.618rem;
+}
+
+.routine-day {
+  padding-top: 1.618rem;
+  border-top: 0.0625rem solid rgba(18, 34, 110, 0.11);
+}
+
+.routine-day:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.routine-day h3 {
+  margin: 0 0 1rem;
+  color: #12226e;
+  font-size: 1.236rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.exercise-list {
+  display: grid;
+  gap: 0.618rem;
+}
+
+.exercise-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(18, 34, 110, 0.035);
+  border: 0.0625rem solid rgba(18, 34, 110, 0.1);
+  border-radius: 0.618rem;
+  transition:
+    background 0.22s ease,
+    border-color 0.22s ease,
+    transform 0.22s ease;
+}
+
+.exercise-item:hover {
+  background: rgba(18, 34, 110, 0.06);
+  border-color: rgba(18, 34, 110, 0.2);
+  box-shadow: 0.191rem 0.191rem 0 0 rgba(18, 34, 110, 0.1);
+  transform: translateY(-0.0625rem);
+}
+
+.exercise-item strong {
+  display: block;
+  color: #03071a;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.exercise-item p {
+  margin: 0.382rem 0 0;
+  color: rgba(3, 7, 26, 0.62);
+  font-size: 0.944rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.exercise-item span {
+  flex: 0 0 auto;
+  align-self: center;
+  padding: 0.382rem 0.618rem;
+  border-radius: 999rem;
+  background: #12226e;
+  color: #ffffff;
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (max-width: 56.25em) {
+  .routine-card {
+    padding: 1.618rem;
+  }
+
+  .routine-card-header h2 {
+    font-size: 1.382rem;
+  }
+
+  .routine-days {
+    margin-top: 1.618rem;
+  }
+}
+
+@media (max-width: 37.5em) and (orientation: portrait) {
+  .routine-card {
+    padding: 1rem;
+    border-radius: 0.618rem;
+    box-shadow: var(--kat-shadow-mobile);
+  }
+
+  .routine-card-header h2 {
+    font-size: 1.236rem;
+  }
+
+  .routine-day h3 {
+    font-size: 1rem;
+  }
+
+  .exercise-item {
+    flex-direction: column;
+    gap: 0.618rem;
+  }
+
+  .exercise-item span {
+    align-self: flex-start;
+  }
+}
